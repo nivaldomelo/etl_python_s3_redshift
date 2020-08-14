@@ -2,7 +2,6 @@
 import pgdb
 import pandas as pd
 import boto3
-import numpy as np
 from io import StringIO
 from boto3.session import Session
 
