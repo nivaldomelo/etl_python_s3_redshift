@@ -59,7 +59,7 @@ for index, row in df.iterrows():
     carb = str(row['carb'])
 
     stringinsertlinha = stringinsertlinha + \
-        "insert into seubancodedados.mtcars(model, mpg, cyl, disp, hp, drat, wt, qsec, vs, am, gear, carb)VALUES("
+        "insert into meuschema.mtcars(model, mpg, cyl, disp, hp, drat, wt, qsec, vs, am, gear, carb)VALUES("
     stringinsertlinha = stringinsertlinha + "'"+model+"','"+mpg+"','"+cyl+"','"+disp + \
         "','"+hp+"','"+drat+"','"+wt+"','"+qsec + \
         "','"+vs+"','"+am+"','"+gear+"','"+carb+"'"
