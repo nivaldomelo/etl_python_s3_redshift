@@ -5,18 +5,18 @@ Este exemplo foi feito com o dataset mtcars, muito utilizado no aprendizado de a
 
 Os dados foram extraídos da revista Motor Trend US de 1974 e abrangem o consumo de combustível e 10 aspectos do design e desempenho de automóveis para 32 automóveis (modelos de 1973 a 1974).
 
-variable	description
-mpg	      Miles/(US) gallon
-cyl	      Number of cylinders
-disp	    Displacement (cu.in.)
-hp	      Gross horsepower
-drat	    Rear axle ratio
-wt	      Weight (lb/1000)
-qsec	    1/4 mile time
-vs	      V/S
-am	      Transmission (0 = automatic, 1 = manual)
-gear	    Number of forward gears
-carb	    Number of carburetors
+O Etl feito foi criado na necessidade de ler os dados de arquivos em Buckets S3 no cloud da AWS. Logo em seguida serão gravados em um banco de dados do Redshift.
+Foi utilizado a biblioteca PGDB que cria uma conexão ao Redshift, essa biblioteca foi construída para o banco de dados PostgreSql, e como o Redshift da Amazon é uma versão modificada dele, a lib poderá ser utilizada também. Além de libs como PG8000 e psycopg2.
+https://pygresql.org/contents/pgdb/index.html
+
+A biblioteca pandas foi utilizada para transformar os dados em Dataframes e fazer um tratamento inicial.
+https://pandas.pydata.org/
+
+A biblioteca boto3 é utilizada para trabalhar com os dados no S3.
+https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
+
+
 
 
 
