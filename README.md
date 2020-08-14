@@ -1,5 +1,5 @@
-# etl_python_s3_redshift
-## :rocket:  Etl criado em Python para ler dados no Amazon S3 e gravar no Redshift.
+# Etl criado em Python para ler dados no Amazon S3 e gravar no Redshift.
+## :rocket:  Python e Redshift
 
 Este exemplo foi feito com o dataset mtcars, muito utilizado no aprendizado de análise de dados.
 
